@@ -15,7 +15,7 @@ jobs:
       - restore_cache:
           key: npm-v1-{{ checksum "package-lock.json" }}
       - run:
-          name: npm ci
+#          name: npm ci
           command: |
             if [ ! -d node_modules ]; then
             npm ci
